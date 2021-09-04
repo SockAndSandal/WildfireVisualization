@@ -1,2 +1,0 @@
-# WildfireVisualization
-California Wildfire Visualization
