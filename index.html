@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wildfire Prediction Charts</title>
+</head>
+<body>
+    <div style="text-align:center" class="content">
+        <h1>Wilfire Prediction Charts</h1>
+        <p style="margin-inline: 20%;">These are two histograms to demonstrate the forcasted change in wildfire duration in California. Unlike what I had originally thought is the case, median fire duration dropped by a large amount. Upon further inspection, I realised that 2017 was an outlier year for wildfires, which saw a significant rise in the year. The previous winter also experienced La Nina, which had unexpected effects on wildfire season. These periodic affects weren't accounted for by the model. It was also noted that wildfire durations dropped back down to a median value of 11 in the years after 2017, so the histograph notes a small increase over the usual.</p>
+    </div>
+    <div class="flex-container">
+        <div class="flex-column">
+            <h3>2017-2020 Wilfire Duration Histogram</h3>
+            <div id="my_dataviz"></div>
+        </div>
+        <div class="flex-column">
+            <h3>2020-2024 Wilfire Duration Histogram</h3>
+            <div id="future_charting"></div>
+        </div>
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="index.js"></script>
+    <script src="future.js"></script>
+    </body>
+</html>
+
+
